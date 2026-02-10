@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<form action="{{ url_for('criar') }}" method="post">
+    <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" class="form-control">
+    </div>
+    <div>
+        <label for=categoria>Categoria</label>
+        <input type="text" id="categoria" name="categoria" class="form-control">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+    </div>
+</form>
+{% endblock %}

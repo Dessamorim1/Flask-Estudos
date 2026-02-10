@@ -1,0 +1,19 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Categoria</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in lista %}
+        <tr>
+            <td> {{ i.nome }}</td>
+            <td> {{ i.categoria }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
