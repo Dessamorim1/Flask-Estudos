@@ -38,3 +38,4 @@ Thumbs.db
 
 # Ignorar todas as pastas __pycache__ em qualquer nível
 **/__pycache__/
+static/bootstrap/
